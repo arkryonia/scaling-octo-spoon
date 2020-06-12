@@ -780,7 +780,7 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .flex-row, .flex-container--column, .container,
 .flex-column, .flex-container--row-reverse,
 .flex-row-reverse, .flex-container--column-reverse,
-.flex-column-reverse,
+.flex-column-reverse, .projects-group,
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1615,7 +1615,7 @@ ul.is-unstyled, ul.unstyled {
   .flex-row, .flex-container--column, .container,
   .flex-column, .flex-container--row-reverse,
   .flex-row-reverse, .flex-container--column-reverse,
-  .flex-column-reverse {
+  .flex-column-reverse, .projects-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2932,6 +2932,46 @@ button:focus {
   font-style: italic;
 }
 
+.projects {
+  min-height: 100vh;
+  background-color: #A90014;
+  padding-top: 15rem;
+  color: whitesmoke;
+}
+
+.projects-group {
+  width: 30%;
+  margin: 0 auto;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+
+.projects-group h2 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.project-item {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.project-item a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.project-item footer {
+  background-color: #873700;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 450px) {
   .nav {
     text-align: center;
@@ -2945,6 +2985,16 @@ button:focus {
   .about img {
     width: 200px;
     height: 200px;
+  }
+  .projects-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    text-align: center;
+  }
+  .project-item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

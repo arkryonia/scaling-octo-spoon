@@ -27,7 +27,6 @@
 
 .about {
     min-height: 100vh;
-    // background-color: $color-secondary-2-3;
     padding-top: 15rem;
     text-align: center;
     h2 {
@@ -39,6 +38,43 @@
     }
     p {
         font-style: italic;
+    }
+}
+
+.projects {
+    min-height: 100vh;
+    background-color: $color-primary-3;
+    padding-top: 15rem;
+    color: whitesmoke;
+}
+
+.projects-group {
+    width: 30%;    
+    margin: 0 auto;
+    min-height: 100vh;
+    color: whitesmoke;
+    @extend .flex-container;
+    h2 {
+        font-family: 'Pacifico', cursive;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+}
+
+.project-item {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    footer {
+        background-color: $color-secondary-1-4;
+        box-shadow: 0 5px  5px rgba(#000, 0.2);
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;        
     }
 }
 
@@ -56,5 +92,13 @@
             width: 200px;
             height: 200px;
         }
+    }
+    .projects-group {
+       display: flex;
+       width: 90%;
+       text-align: center;
+    }
+    .project-item {
+        width: 100%;
     }
 }
