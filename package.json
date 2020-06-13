@@ -1,0 +1,10 @@
+{
+  "name": "xoportfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hodonou Sounton <sounton@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "swup": "^2.0.10"
+  }
+}
